@@ -1,0 +1,8 @@
+<h1>Edit <%= @figure.title %></h1>
+
+<form action="/figures/<%= @figures.slug %>" method="post">
+  Figure: <input type="text" name="figure_name" value="<%= @figure.name %>"><br>
+  Title: <input type="text" name="title_name" value="<%= @figure.title %>"><br>
+  Landmark: <input type="text" name="landmark_name" value="<%= @figure.landmark %>"><br>
+  <input type="submit" value="Save">
+</form>
